@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: radial-gradient(circle at top, #2a003f, #0b0014);
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(10, 0, 20, 0.8);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 0, 204, 0.4);
+  position: sticky;
+  top: 0;
+}
+
+.navbar h2 {
+  color: #c77dff;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* efecto underline animado */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #ff00cc;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff00cc;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* HOME */
+.home {
+  text-align: center;
+  margin-top: 120px;
+  animation: fadeIn 1s ease-in;
+}
+
+.home h1 {
+  font-size: 48px;
+  background: linear-gradient(90deg, #ff00cc, #c77dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home p {
+  font-size: 20px;
+  color: #c77dff;
+}
+
+/* TITULO */
+.titulo {
+  text-align: center;
+  margin: 40px 0;
+  color: #c77dff;
+}
+
+/* SECCIONES */
+.seccion {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* CARDS PRO */
+.card {
+  background: rgba(20, 0, 35, 0.8);
+  border: 1px solid rgba(255, 0, 204, 0.2);
+  padding: 22px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 25px rgba(255, 0, 204, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* glow animado */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,0,204,0.15), transparent 60%);
+  transform: rotate(0deg);
+  transition: 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 35px rgba(199, 125, 255, 0.4);
+  border-color: #ff00cc;
+}
+
+.card h3 {
+  color: #ff00cc;
+  margin-bottom: 8px;
+}
+
+.card span {
+  color: #c77dff;
+  font-size: 14px;
+}
+
+.card ul {
+  margin-top: 10px;
+}
+
+.card li::marker {
+  color: #ff00cc;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}.profile-img {
+  width: 150px;      /* tamaño */
+  height: 150px;     /* mismo valor para que sea círculo */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 50%; /* la vuelve redonda */
+  
+  <img src="imagen.jpg" class="derecha">
+
+<style>
+.derecha {
+  float: right;
+  margin-left: 10px; /* espacio entre texto e imagen */
+}
+</style>
+}
