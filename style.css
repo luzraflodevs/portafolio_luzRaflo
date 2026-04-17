@@ -98,7 +98,7 @@ body {
   transform: scale(1.2);
 }
 
-.seccion {
+.section {
   max-width: 900px;
   margin: 80px auto;
   padding: 20px;
@@ -215,4 +215,7 @@ footer {
 .contenido {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  grid-template-columns: auto;
 }
